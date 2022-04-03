@@ -8,6 +8,7 @@ class CalculatorTest extends TestCase
     public function testAddOperation(): void
     {
         $adder = new Calculator("add");
+        
         $value = $adder->evaluate(2, 3);
         $this->assertEquals($value, 5);
     }
